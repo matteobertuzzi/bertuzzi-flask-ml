@@ -1,3 +1,11 @@
 __pycache__
 .env
 .learn
+
+# Models & scalers
+*.h5
+*.save
+
+# Datasets
+*.csv
+

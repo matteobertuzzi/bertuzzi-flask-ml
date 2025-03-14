@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container result-box">
+    <h2>Predicted Flight Status:</h2>
+    <h1>{{ prediction }}</h3>
+    <a href="/">Predict another flight</a>
+</div>
+</body>
+</html>

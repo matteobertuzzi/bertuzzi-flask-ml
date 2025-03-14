@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Status Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>✈️ Predict Flight Status</h2>
+        <form action="/predict" method="post">
+            <label>Airport Country Code:</label>
+            <input type="number" name="airport_country_code" required>
+
+            <label>Airport Continent:</label>
+            <input type="number" name="airport_continent" required>
+
+            <label>Arrival Airport Code:</label>
+            <input type="number" name="arrival_airport" required>
+
+            <label>Week Day (0-6):</label>
+            <input type="number" name="week_day" required>
+
+            <label>Day (1-31):</label>
+            <input type="number" name="day" required>
+
+            <label>Month (1-12):</label>
+            <input type="number" name="month" required>
+
+            <input type="submit" value="Predict Flight Status">
+    </form>
+</div>
+</body>
+</html>
